@@ -6,4 +6,6 @@ import java.util.ArrayList;
 
 public interface productservice {
     List<product> showall();
+
+    product findproductById(String id);
 }

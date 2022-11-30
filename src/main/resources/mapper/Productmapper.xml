@@ -15,4 +15,8 @@
     <select id="getall"  resultMap="ProStatus">
         SELECT * from product
     </select>
+
+    <select id="findproductById" resultType="ProStatus">
+        select * from student where pid = #{ pid }
+    </select>
 </mapper>

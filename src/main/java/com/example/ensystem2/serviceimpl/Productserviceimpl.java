@@ -15,4 +15,7 @@ public class Productserviceimpl implements productservice{
     public List <product> showall() {
         return productmapper.getall();
     }
+    public product findproductById(String id){
+        return productmapper.findproductById(id);
+    }
 }

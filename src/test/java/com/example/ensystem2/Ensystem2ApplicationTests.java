@@ -15,15 +15,15 @@ import javax.annotation.Resource;
 @SpringBootTest
 class Ensystem2ApplicationTests {
     @Resource
+    userservice userService;
     productservice proService;
     @Test
     void contextLoads() {
-        List probean = proService.showall();
-        System.out.println(probean);
-        for(int i=0;i<probean.size();i++)
-            System.out.println(proService.showall().get(i).getpName());
-//        user userbean = userService.logIn("Diluc","diluc03");
-//        System.out.println("user sex is: ");
-//        System.out.println(userbean.getSex());
+//        List probean = proService.showall();
+//        for(int i=0;i<probean.size();i++)
+//            System.out.println(proService.showall().get(i).getpName());
+        user userbean = userService.logIn("Diluc","diluc03");
+        System.out.println("user sex is: ");
+        System.out.println(userbean.getSex());
     }
 }

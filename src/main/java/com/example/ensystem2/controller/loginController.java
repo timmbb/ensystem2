@@ -12,15 +12,15 @@ public class loginController {
     @Resource
     userservice userService;
 
-    @RequestMapping("/interface")
-    public String show(){return "interface";}
+    @RequestMapping("/admin_login")
+    public String show(){return "admin_login";}
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/logIn",method = RequestMethod.POST)
     public String loginMethod(String UserName,String PassWord)
     {
         user userBean=userService.logIn(UserName, PassWord);//
         if (userBean!=null)
-            return "success";
+            return "ad_customer";
         else return "error";
     }
 }
