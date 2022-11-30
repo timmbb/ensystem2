@@ -17,7 +17,7 @@ class Ensystem2ApplicationTests {
     @Test
     void contextLoads() {
         user userbean = userService.logIn("Diluc","diluc03");
-        System.out.println("user id is: ");
-        System.out.println(userbean.getId());
+        System.out.println("user sex is: ");
+        System.out.println(userbean.getSex());
     }
 }
