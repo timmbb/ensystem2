@@ -1,5 +1,5 @@
 package com.example.ensystem2.controller;
-/*
+
 import com.example.ensystem2.bean.user;
 import com.example.ensystem2.service.userservice;
 import org.springframework.stereotype.Controller;
@@ -12,15 +12,15 @@ public class loginController {
     @Resource
     userservice userService;
 
-    @RequestMapping("/interface")
-    public String show(){return "interface";}
+    @RequestMapping("/sal_login")
+    public String show(){return "sal_login";}
 
     @RequestMapping(value = "/logIn",method = RequestMethod.POST)
-    public String loginMethod(String name,String password){
-        user userBean=userService.logIn(name, password);
-        if (userBean!=null)
+    public String loginMethod(String UserName,String PassWord){
+        user userbean=userService.logIn(UserName, PassWord);
+        if (userbean!=null)
             return "success";
-        else return "error";
+        else
+            return "error";
     }
 }
-*/
