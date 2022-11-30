@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ensystem2.mapper.productmapper">
+
+    <resultMap id="ProStatus" type="com.example.ensystem2.bean.product">
+        <id property="pid" column="pid"/>
+        <result property="pid" column="pid"/>
+        <result property="pName" column="pName"/>
+        <result property="pType" column="pType"/>
+        <result property="pAuthor" column="pAuthor"/>
+        <result property="pPrice" column="pPrice"/>
+        <result property="pAmount" column="pAmount"/>
+    </resultMap>
+
+    <select id="getall"  resultMap="ProStatus">
+        SELECT * from product
+    </select>
+</mapper>

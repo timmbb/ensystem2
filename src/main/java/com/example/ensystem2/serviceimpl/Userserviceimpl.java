@@ -12,8 +12,8 @@ public class Userserviceimpl implements userservice {
     @Resource
     private usermapper usermapper;
 
-    public user logIn(String UserName, String PassWord){
-
+    public user logIn(String UserName, String PassWord)
+    {
         return usermapper.getInfo(UserName, PassWord);
     }
 }

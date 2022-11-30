@@ -2,58 +2,58 @@ package com.example.ensystem2.bean;
 
 public class product {
 
-    private String id;		//ID序列号
-    private String Name;	//名
-    private String  Type;		//类别
-    private String Author;		//作者
-    private long Price ;		//价格
-    private long Amount ;		//总数量
+    private String pid;		//ID序列号
+    private String pName;	//名
+    private String  pType;		//类别
+    private String pAuthor;		//作者
+    private long pPrice ;		//价格
+    private long pAmount ;		//总数量
     /**
      * 初始化
      */
     public product() {
-        id = "";
-        Name = "";
-        Type = "";
-        Author = "";
-        Price = 0;
-        Amount = 0;
+        pid = "";
+        pName = "";
+        pType = "";
+        pAuthor = "";
+        pPrice = 0;
+        pAmount = 0;
     }
-    public void setid(String newid){
-        this.id = newid;
+    public void setpid(String newpid){
+        this.pid = newpid;
     }
-    public String getid(){
-        return id;
+    public String getpid(){
+        return pid;
     }
-    public void setName(String newName) {
-        this.Name = newName;
+    public void setpName(String newpName) {
+        this.pName = newpName;
     }
-    public String getName() {
-        return Name;
+    public String getpName() {
+        return pName;
     }
-    public void setType(String newType) {
-        this.Type = newType;
+    public void setpType(String newpType) {
+        this.pType = newpType;
     }
-    public String getType() {
-        return Type;
+    public String getpType() {
+        return pType;
     }
-    public void setAuthor(String newAuthor) {
-        this.Author = newAuthor;
+    public void setpAuthor(String newpAuthor) {
+        this.pAuthor = newpAuthor;
     }
-    public String getAuthor() {
-        return Author;
+    public String getpAuthor() {
+        return pAuthor;
     }
-    public void setPrice(long newPrice) {
-        this.Price = newPrice;
+    public void setpPrice(long newpPrice) {
+        this.pPrice = newpPrice;
     }
-    public long getPrice() {
-        return Price;
+    public long getpPrice() {
+        return pPrice;
     }
-    public void setAmount(long newAmount) {
-        this.Amount = newAmount;
+    public void setpAmount(long newpAmount) {
+        this.pAmount = newpAmount;
     }
-    public long getAmount() {
-        return Amount;
+    public long getpAmount() {
+        return pAmount;
     }
 
 }
